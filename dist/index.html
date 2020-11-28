@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Priority Matrix</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+  <article class="priorityMatrix">
+    <section id="visualizations" class="visualizations">
+      <div>
+        <h1 class="visualizations__title">Priority Matrix</h1>
+        <p class="visualizations__description">You are viewing a demo dataset. Select the different cards below to see different data visualizations. Select an item in the graph to easily track between visualizations. <a href="https://medium.com/@kleinpaste">Read the Medium post</a> to learn more. <a href="https://github.com/kleinpaste/priority-matrix">Download from GitHub</a> to experiment with your own data.</p>
+      </div>
+    </section>
+    <section class="matrixGraph">
+      <div class="matrixGraph__container">
+        <p id="yMax" class="matrixGraph__yLabel matrixGraph__yLabel--max">High</p>
+        <p id="yMain" class="matrixGraph__yLabel matrixGraph__yLabel--main">Impact</p>
+        <p id="yMin" class="matrixGraph__yLabel matrixGraph__yLabel--min">Low</p>
+        <p id="xMax" class="matrixGraph__xLabel matrixGraph__xLabel--max">High</p>
+        <p id="xMain" class="matrixGraph__xLabel matrixGraph__xLabel--main">Effort</p>
+        <p id="xMin" class="matrixGraph__xLabel matrixGraph__xLabel--min">Low</p>
+        <div id="data" class="matrixGraph__data"></div>
+      </div>
+      <div id="key" class="matrixGraph__key">
+        <p class="matrixGraph__keyLabel">Category Color Key:</p>
+      </div>
+    </section>
+  </article>
+  <script src="data/stickyNotes.js"></script>
+  <script src="data/visualizations.js"></script>
+  <script src="data/categories.js"></script>
+  <script src="data/axises.js"></script>
+  <script src="js/priorityMatrix.js"></script>
+</body>
+</html>
