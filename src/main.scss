@@ -128,8 +128,8 @@ a:active {
     }
   }
   &__cardTitle {
-    font-size: 1.5rem;
-    margin-bottom: 0.375em;
+    font-size: 1.375rem;
+    margin-bottom: 0.25em;
   }
   &__cardDescription {
     margin-bottom: 1.25em;
@@ -271,10 +271,10 @@ a:active {
     &--isFlagged::after {
       content: "";
       position: absolute;
-      width: 1.125rem;
-      height: 1.125rem;
-      width: clamp(0.6875rem, min(2vh, 1.125vw), 1.375rem);
-      height: clamp(0.6875rem, min(2vh, 1.125vw), 1.375rem);
+      width: 0.875rem;
+      height: 0.875rem;
+      width: clamp(0.6875rem, min(2vh, 0.875vw), 1.375rem);
+      height: clamp(0.6875rem, min(2vh, 0.875vw), 1.375rem);
       top: 0.25em;
       right: 0.25em;
       background: url("../assets/icon-star.svg");
